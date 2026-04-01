@@ -31,9 +31,9 @@ const blogs = [
   },
   {
     id: 4,
-    title: 'The Rise of Automotive Safety Glass in India',
-    excerpt: 'Evolution of vehicle glass technology and upcoming industry standards for safer transportation.',
-    category: 'Industry',
+    title: 'Glass Facades: The Future of Modern Architecture in India',
+    excerpt: 'How architectural glass facades are reshaping skylines and improving energy efficiency in Indian commercial buildings.',
+    category: 'Architecture',
     date: 'Feb 28, 2024',
     image: 'photo-1497366216548-37526070297c',
   },

@@ -26,7 +26,7 @@ const machines = [
     label: 'Edge Polishing Machine',
     title: 'SK Glass Edge Polishing Machine',
     description:
-      'Our SK Glass Edge Polishing Machine delivers flawlessly smooth, polished glass edges for architectural and automotive applications. Multi-head diamond wheel technology ensures consistent quality across all thicknesses.',
+      'Our SK Glass Edge Polishing Machine delivers flawlessly smooth, polished glass edges for architectural applications. Multi-head diamond wheel technology ensures consistent quality across all thicknesses.',
     images: [
       { src: '/images/edge-polishing-machine.jpg', caption: 'SK Glass Edge Polishing Machine', sub: 'Multi-head diamond wheel polishing' },
       { src: '/images/edge-polishing-machine-2.jpg', caption: 'Edge Polishing — Full Run View', sub: 'Industrial-grade finishing for all glass types' },

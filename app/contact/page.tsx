@@ -233,7 +233,47 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Why Share Feedback */}
+      {/* Google Maps Location */}
+      <section className="w-full">
+        <div className="bg-dark py-8 px-4 text-center">
+          <p className="text-primary font-montserrat font-bold text-xs uppercase tracking-[0.2em] mb-2">Find Us</p>
+          <h2 className="font-montserrat font-bold text-2xl md:text-3xl text-white uppercase tracking-tight">
+            Our Location
+          </h2>
+          <p className="text-white/60 text-sm mt-2">
+            Gadh Road, At & Post. Khodla, Ta. Palanpur (B.K.), Gujarat - 385001
+          </p>
+        </div>
+        <div className="relative w-full h-[450px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.123456789!2d72.41800!3d24.17300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395cbc1234567890%3A0xabcdef1234567890!2sShaswat%20Glass%20Solution%20Pvt%20Ltd%2C%20Gadh%20Road%2C%20Khodla%2C%20Palanpur%2C%20Gujarat%20385001!5e0!3m2!1sen!2sin!4v1234567890123"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full"
+            title="Shaswat Glass Solution Location"
+          />
+          {/* Overlay button to open in Google Maps */}
+          <a
+            href="https://maps.google.com/?q=Shaswat+Glass+Solution+Pvt+Ltd+Khodla+Palanpur+Gujarat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute bottom-6 right-6 bg-primary text-white font-montserrat font-bold text-xs uppercase
+                       tracking-wider px-5 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-colors flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Open in Maps
+          </a>
+        </div>
+      </section>
+
+
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">

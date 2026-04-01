@@ -18,9 +18,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Shaswat Glass Solution - Premium Architectural & Automotive Glass',
-  description: 'Shaswat Glass Solution Pvt Ltd - IS 2553 Certified. Trust The Best. Premium glass processing for architecture and automotive industries.',
-  keywords: 'tempered glass, laminated glass, insulated glass, architectural glass, automotive glass, glass processing',
+  title: 'Shaswat Glass Solution - Premium Architectural Glass',
+  description: 'Shaswat Glass Solution Pvt Ltd - IS 2553 Certified. Trust The Best. Premium glass processing for architectural industries.',
+  keywords: 'tempered glass, laminated glass, insulated glass, architectural glass, glass processing, safety glass',
 }
 
 export default function RootLayout({

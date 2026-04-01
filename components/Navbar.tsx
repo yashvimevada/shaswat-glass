@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
@@ -32,47 +32,32 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white shadow-lg'
-          : 'bg-white/95 backdrop-blur-sm'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-white shadow-lg'
+        : 'bg-white/95 backdrop-blur-sm'
+        }`}
     >
-      {/* Top Bar */}
-      <div className="hidden lg:block bg-dark text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-2 text-xs">
-          <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1">
-              <Phone size={12} />
-              +91 98983 90824
-            </span>
-            <span>shaswatglass4191@gmail.com</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="text-primary font-semibold">IS 2553: Part 1:2018 Certified</span>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Nav */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-14 h-14 relative group-hover:scale-105 transition-transform">
+            <div className="relative w-16 h-16 rounded-full ring-2 ring-primary/40 bg-white group-hover:ring-primary transition-all duration-300 shadow-[0_0_15px] shadow-black/20 group-hover:shadow-[0_0_25px] group-hover:shadow-primary flex items-center justify-center">
               <Image
                 src="/logo.png"
                 alt="Shaswat Glass Logo"
-                width={56}
-                height={56}
-                className="drop-shadow-sm"
+                width={60}
+                height={60}
+                className="drop-shadow-[0_4px_8px_rgba(0,0,0,0.3)] group-hover:drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-all duration-300"
               />
             </div>
             <div>
-              <h1 className="font-montserrat text-primary font-bold text-lg leading-tight tracking-tight">
+              <h1 className="font-montserrat text-primary font-bold text-xl leading-tight tracking-tight">
                 SHASWAT
               </h1>
-              <p className="text-text-body text-[10px] font-medium uppercase tracking-widest">
+              <p className="text-text-body text-[10px] font-semibold uppercase tracking-widest">
                 Glass Solution Pvt Ltd
               </p>
             </div>
@@ -84,9 +69,8 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`nav-link ${
-                  pathname === item.href ? 'nav-link-active' : ''
-                }`}
+                className={`nav-link ${pathname === item.href ? 'nav-link-active' : ''
+                  }`}
               >
                 {item.name}
               </Link>
@@ -119,11 +103,10 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-3 px-4 font-montserrat font-semibold text-sm uppercase tracking-wider rounded-lg transition-colors ${
-                      pathname === item.href
-                        ? 'text-accent bg-accent/5'
-                        : 'text-text-dark hover:text-primary hover:bg-primary/5'
-                    }`}
+                    className={`block py-3 px-4 font-montserrat font-semibold text-sm uppercase tracking-wider rounded-lg transition-colors ${pathname === item.href
+                      ? 'text-accent bg-accent/5'
+                      : 'text-text-dark hover:text-primary hover:bg-primary/5'
+                      }`}
                   >
                     {item.name}
                   </Link>

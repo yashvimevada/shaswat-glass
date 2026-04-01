@@ -51,8 +51,8 @@ export default function About() {
             className="relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=600&fit=crop"
-              alt="Our Facility"
+              src="/images/about/uploaded-factory-image.png"
+              alt="Shaswat Glass Factory"
               width={600}
               height={600}
               className="rounded-lg shadow-xl"
@@ -69,7 +69,7 @@ export default function About() {
             <h2 className="section-title text-text-dark mb-6">Building Excellence Since 2022</h2>
             <div className="space-y-4 text-text-body leading-relaxed">
               <p>
-                Shaswat Glass Solution Private Limited was established in 2022 in Palanpur, Gujarat, with a vision to become the industry leader in architectural and automotive glass processing. Our journey is built on the foundation of quality, innovation, and customer satisfaction.
+                Shaswat Glass Solution Private Limited was established in 2022 in Palanpur, Gujarat, with a vision to become the industry leader in architectural glass processing. Our journey is built on the foundation of quality, innovation, and customer satisfaction.
               </p>
               <p>
                 We are proud holders of IS 2553: Part 1:2018 certification (CML No.: 7200302288), a testament to our unwavering commitment to international quality standards. Our state-of-the-art manufacturing facility is equipped with advanced machinery and staffed by experienced professionals.
@@ -94,7 +94,7 @@ export default function About() {
               {
                 icon: Eye,
                 title: 'Vision',
-                desc: 'To be the industry leader in Automobile OEMs, Architectural Building Glass, and Transportation sectors through innovation and excellence.',
+                desc: 'To be the industry leader in Architectural Building Glass and Transportation sectors through innovation and excellence.',
                 color: 'primary',
               },
               {

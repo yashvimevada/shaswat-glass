@@ -82,7 +82,7 @@ export default function Footer() {
               <span className="absolute bottom-0 left-0 w-10 h-0.5 bg-primary -mb-2"></span>
             </h4>
             <p className="text-white/60 text-sm mb-6 mt-4">
-              Don't miss our future updates! Get Subscribed Today!
+            Don&apos;t miss our future updates! Get Subscribed Today!
             </p>
             <form onSubmit={handleSubscribe} className="flex gap-0">
               <input

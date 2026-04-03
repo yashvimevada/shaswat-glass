@@ -23,7 +23,7 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
         <section className="bg-dark text-white py-24">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h1 className="hero-title mb-4">Product Not Found</h1>
-            <p className="text-xl text-white/80 mb-8">The product you're looking for doesn't exist.</p>
+            <p className="text-xl text-white/80 mb-8">The product you&apos;re looking for doesn&apos;t exist.</p>
             <Link href="/products" className="btn-primary">
               Back to Products
             </Link>
@@ -167,7 +167,7 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
         <section className="section-padding bg-off-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
-              <p className="text-primary font-montserrat font-bold text-xs uppercase tracking-[0.2em] mb-3">Where It's Used</p>
+              <p className="text-primary font-montserrat font-bold text-xs uppercase tracking-[0.2em] mb-3">Where It&apos;s Used</p>
               <h2 className="section-title text-text-dark">Applications & Uses</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -56,7 +56,7 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-white/70 text-lg"
             >
-              We'd love to hear from you. Share your feedback or inquiries
+              We&apos;d love to hear from you. Share your feedback or inquiries
             </motion.p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                 <CheckCircle size={40} className="text-green-400" />
               </div>
               <h3 className="font-montserrat font-bold text-white text-xl mb-3">Message Sent on WhatsApp!</h3>
-              <p className="text-white/60 text-sm">We'll reply to you shortly.</p>
+              <p className="text-white/60 text-sm">We&apos;ll reply to you shortly.</p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -145,7 +145,7 @@ export default function Contact() {
                 Send via WhatsApp
               </button>
               <p className="text-white/30 text-xs text-center">
-                Opens WhatsApp with your message pre-filled. We'll reply instantly.
+                Opens WhatsApp with your message pre-filled. We&apos;ll reply instantly.
               </p>
             </form>
           )}
@@ -167,9 +167,9 @@ export default function Contact() {
               <div>
                 <h3 className="font-montserrat font-bold text-text-dark mb-2">Address</h3>
                 <p className="text-text-body text-sm leading-relaxed">
-                  Shaswat Industrial Park<br/>
-                  Gadh Road, At & Post. Khodla<br/>
-                  Ta. Palanpur (B.K.), Gujarat<br/>
+                  Shaswat Industrial Park<br />
+                  Gadh Road, At & Post. Khodla<br />
+                  Ta. Palanpur (B.K.), Gujarat<br />
                   India - 385001
                 </p>
               </div>
@@ -217,8 +217,8 @@ export default function Contact() {
               <div>
                 <h3 className="font-montserrat font-bold text-text-dark mb-2">Business Hours</h3>
                 <p className="text-text-body text-sm leading-relaxed">
-                  Monday - Friday: 9:00 AM - 6:00 PM<br/>
-                  Saturday: 9:00 AM - 2:00 PM<br/>
+                  Monday - Friday: 9:00 AM - 6:00 PM<br />
+                  Saturday: 9:00 AM - 2:00 PM<br />
                   Sunday: Closed
                 </p>
               </div>
@@ -265,8 +265,8 @@ export default function Contact() {
                        tracking-wider px-5 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-colors flex items-center gap-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
             </svg>
             Open in Maps
           </a>

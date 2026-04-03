@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight, ChevronDown, Check, Shield, Cpu, Truck, Leaf, BarChart3 } from 'lucide-react'
+import { ChevronLeft, ChevronRight, ChevronDown, Check, Shield, Cpu, Truck, Leaf, BarChart3, MapPin, Navigation } from 'lucide-react'
 
 const heroSlides = [
   {
@@ -440,6 +440,103 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* GPS Location Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-primary font-montserrat font-bold text-xs uppercase tracking-[0.2em] mb-3">Find Us</p>
+            <h2 className="section-title text-text-dark">Our Location</h2>
+            <p className="text-text-body mt-3 max-w-xl mx-auto text-sm">
+              Shaswat Industrial Park, Gadh Road, At &amp; Post. Khodla, Ta. Palanpur (B.K.), Gujarat - 385001
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 items-stretch">
+            {/* Map Embed */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:col-span-2 rounded-2xl overflow-hidden shadow-2xl border border-border-light relative group"
+            >
+              <iframe
+                src="https://maps.google.com/maps?q=24.17300,72.41800&z=15&output=embed"
+                width="100%"
+                height="420"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Shaswat Glass Solution Location"
+                className="w-full h-[420px]"
+              />
+              {/* Hover overlay with direct link */}
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300 pointer-events-none" />
+            </motion.div>
+
+            {/* Info Card */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex flex-col justify-between bg-dark rounded-2xl p-8 shadow-xl"
+            >
+              <div>
+                <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                  <MapPin size={28} className="text-primary" />
+                </div>
+                <h3 className="font-montserrat font-bold text-white text-xl mb-4 uppercase tracking-tight">
+                  Shaswat Glass Solution
+                </h3>
+                <div className="space-y-3 text-sm">
+                  <p className="text-white/70 leading-relaxed">
+                    Shaswat Industrial Park,<br />
+                    Gadh Road, At &amp; Post. Khodla,<br />
+                    Ta. Palanpur (B.K.),<br />
+                    Gujarat, India - 385001
+                  </p>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-white/10 space-y-2">
+                  <div className="flex items-center gap-2 text-white/50 text-xs">
+                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                    GPS Coordinates
+                  </div>
+                  <p className="text-white/80 font-mono text-sm">24.1730° N, 72.4180° E</p>
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-3">
+                {/* Primary CTA — direct Google Maps share link */}
+                <a
+                  href="https://maps.app.goo.gl/So1ZgRF3k8UJTC399"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary w-full text-center flex items-center justify-center gap-2"
+                >
+                  <Navigation size={16} />
+                  Get Directions
+                </a>
+                {/* Secondary — open full Google Maps */}
+                <a
+                  href="https://maps.app.goo.gl/So1ZgRF3k8UJTC399"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-3 px-5 rounded-lg border border-white/20
+                             text-white/70 hover:text-white hover:border-primary text-sm font-semibold
+                             font-montserrat transition-all duration-300"
+                >
+                  <MapPin size={14} />
+                  Open in Google Maps
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
 
       {/* CTA Section */}

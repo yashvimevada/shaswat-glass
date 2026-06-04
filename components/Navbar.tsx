@@ -44,15 +44,33 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-16 h-16 rounded-full ring-2 ring-primary/40 bg-white group-hover:ring-primary transition-all duration-300 shadow-[0_0_15px] shadow-black/20 group-hover:shadow-[0_0_25px] group-hover:shadow-primary flex items-center justify-center">
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0, boxShadow: "0px 0px 0px rgba(29, 138, 138, 0)" }}
+              animate={{
+                scale: 1,
+                opacity: 1,
+                boxShadow: [
+                  "0px 0px 0px rgba(29, 138, 138, 0)",
+                  "0px 0px 35px rgba(29, 138, 138, 0.9)",
+                  "0px 0px 15px rgba(29, 138, 138, 0.2)"
+                ]
+              }}
+              whileHover={{
+                scale: 1.08,
+                boxShadow: "0px 0px 30px rgba(29, 138, 138, 0.7)",
+                borderColor: "#1D8A8A"
+              }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+              className="relative w-16 h-16 rounded-xl border-2 border-primary/30 bg-white flex items-center justify-center cursor-pointer transition-colors duration-300"
+            >
               <Image
                 src="/logo.png"
                 alt="Shaswat Glass Logo"
-                width={60}
-                height={60}
-                className="drop-shadow-[0_4px_8px_rgba(0,0,0,0.3)] group-hover:drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-all duration-300"
+                width={52}
+                height={52}
+                className="relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] group-hover:scale-105 transition-all duration-300"
               />
-            </div>
+            </motion.div>
             <div>
               <h1 className="font-montserrat text-primary font-bold text-xl leading-tight tracking-tight">
                 SHASWAT
